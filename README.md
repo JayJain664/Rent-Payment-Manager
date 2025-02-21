@@ -1,32 +1,45 @@
-🏠 Rent Payment Manager
+# social_media_interaction_tracker
+# 📊 Social Media Engagement Tracker
 
-This is a simple smart contract for managing rent payments with late fee penalties. It allows a landlord to set a tenant, collect rent payments, and enforce due dates with late fees.
+A simple *Solidity smart contract* that tracks social media engagement (likes, comments, shares) and rewards users based on their activity. This contract is deployed on *Edu Chain*.
 
-✨ Features
+## 🌟 Features
 
-🔹 Set Tenant: The landlord can set the tenant's address (only once).
+✅ *Track Engagement*: Store user interactions (likes, comments, shares).  
+✅ *Claim Rewards*: Users receive rewards when engagement points reach a threshold.  
+✅ *Transparent & Secure*: Uses blockchain for verifiable engagement tracking.  
+✅ *No Constructor Needed*: No input required during deployment.  
+✅ *View Functions*: Check engagement scores and rewards anytime.
 
-💰 Rent Payment: The tenant can pay the rent amount.
+## 🔗 Deployed Smart Contract
 
-⚠️ Late Fee Handling: If rent is paid after the due date, a late fee is required.
+- *Network*: Edu Chain  
+- *Contract Address*: 0xE6959a4531145d52B04d40cf7B621768cDF024D3
 
-🔄 Automatic Fund Transfer: Rent payments are transferred directly to the landlord.
+## 🚀 How It Works
 
-📌 Deployed Address
+1. *Update Engagement*:  
+   - Admin updates user engagement scores via updateEngagement(address user, uint256 score).  
 
-The contract is deployed on Edu Chain from Remix at:
+2. *Check Scores & Rewards*:  
+   - getEngagement(address user) → View engagement points.  
+   - getRewards(address user) → View total earned rewards.  
 
-0x42e758a90EA1B2f7596d9C5b62088146161De8c1
+3. *Claim Rewards*:  
+   - Users with 100+ points can claim rewards using claimReward().  
+   - Engagement resets after claiming.
 
-🚀 Usage
+## 🛠 Future Improvements
 
-🏡 Set Tenant: The landlord sets the tenant address.
+- 🔗 *Automated Social Media API Integration*  
+- 💰 *Reward System with ERC-20 Tokens*  
+- 🛡 *Admin Role for Secure Updates*  
+- 🎯 *Leaderboard for Top Engagers*  
 
-💵 Pay Rent: The tenant sends the required rent amount.
+## 📜 License
 
-⏳ Late Fee: If the payment is late, an additional late fee must be included.
+This project is open-source under the *MIT License*.
 
-📜 License
+---
 
-This project is licensed under the MIT License.
-
+🔗 *Follow for more updates!* 🚀
