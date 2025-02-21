@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Engagement Tracker</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Social Media Engagement Tracker</h1>
+        
+        <button id="connectWallet">Connect Wallet</button>
+        <p><strong>Connected Account:</strong> <span id="account">Not Connected</span></p>
+
+        <div class="buttons">
+            <button onclick="updateEngagement(10)">
+                <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Like" width="25"> Like
+            </button>
+            <button onclick="updateEngagement(20)">
+                <img src="https://cdn-icons-png.flaticon.com/512/1380/1380338.png" alt="Comment" width="25"> Comment
+            </button>
+            <button onclick="updateEngagement(30)">
+                <img src="https://cdn-icons-png.flaticon.com/512/929/929610.png" alt="Share" width="25"> Share
+            </button>
+        </div>
+
+        <p><strong>Engagement Score:</strong> <span id="score">0</span></p>
+        <p><strong>Rewards:</strong> <span id="rewards">0</span></p>
+
+        <button id="claimReward">Claim Reward</button>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
