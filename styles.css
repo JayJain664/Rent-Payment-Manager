@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+/* Main Container */
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.4);
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Title */
+h1 {
+    margin-bottom: 25px;
+    font-size: 26px;
+    color: #ffcc00;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Wallet Connect Button */
+#connectWallet {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    margin: 15px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#connectWallet:hover {
+    background: #ff4500;
+}
+
+/* Account Info */
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.buttons button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.buttons button img {
+    width: 22px;
+    margin-right: 8px;
+}
+
+.buttons button:hover {
+    background: #218838;
+}
+
+/* Claim Reward Button */
+#claimReward {
+    background: #007bff;
+    padding: 12px 18px;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#claimReward:hover {
+    background: #0056b3;
+}
+
+/* Score and Rewards */
+#score, #rewards {
+    font-weight: bold;
+    color: #ffcc00;
+    font-size: 20px;
+}
